@@ -29,6 +29,9 @@
     font-size: 35px;
     font-weight: 600;
 }
+.navbar .logo a span{
+    color: darkslategrey;
+}
 .navbar .menu li {
     list-style: none;
     display:inline-block;
@@ -38,12 +41,16 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: darkslategrey;
 }
 
 /* Home Portion */
 .home{
     display: flex;
-    background: url("images/banner3.jpg") no-repeat center;
+    background: url("images/banner4.jpg") no-repeat center;
     color: white;
     height: 100vh;
     min-height: 600px;
@@ -67,7 +74,7 @@
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: bisque;
+    color: darkslategrey;
     font-weight: 500;
 
 }
