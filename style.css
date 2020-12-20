@@ -49,6 +49,13 @@
 .navbar .menu li a:hover{
     color: darkslategrey;
 }
+/* Menu Button */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
 
 /* Home Portion */
 .home{
@@ -79,5 +86,17 @@
 .home .home-content .text-3 span{
     color: slategray;
     font-weight: 500;
+}
 
+/* Responsive Media */
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar.menu{
+        position: fixed;
+        height: 100vh;
+        background: black;
+
+    }
 }
