@@ -89,14 +89,39 @@
 }
 
 /* Responsive Media */
-@media (max-width: 991px){
+@media (max-width: 947px){
     .max-width{
         padding: 0 50px;
     }
-    .navbar.menu{
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
         position: fixed;
         height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
         background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 80;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+
     }
     
 }
